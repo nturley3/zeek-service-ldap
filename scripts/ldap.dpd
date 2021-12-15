@@ -1,0 +1,5 @@
+signature protosig_ldap {
+  ip-proto == tcp
+  payload /^\x30.\x02\x01/
+  eval ldap_match
+}
